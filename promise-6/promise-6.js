@@ -7,11 +7,12 @@ async function displayCats() {
 		...paginationEl.children
 	].find(button => button.classList.contains('active'));
 
-	const params = new URLSearchParams({
-		query : currentPaginationEl.innerText
+	const usp = new URLSearchParams({
+		limit : '10',
+		page  : currentPaginationEl.innerText
 	});
 
-	const url = `https://api.thecatapi.com/v1/images/search?limit=10&page=?${params.toString()}`;
+	const url = `https://api.thecatapi.com/v1/images/search?${usp.toString()}`;
 
 	const response = await fetch(url);
 	const catList = await response.json();
