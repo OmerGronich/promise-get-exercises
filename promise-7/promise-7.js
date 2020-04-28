@@ -19,8 +19,11 @@ async function initialize() {
 }
 
 async function generateImageByBreed(id) {
+	const usp = new URLSearchParams({
+		breed_ids : id
+	});
 	const imgRes = await fetch(
-		`https://api.thecatapi.com/v1/images/search?breed_ids=${id}`
+		`https://api.thecatapi.com/v1/images/search?${usp.toString()}`
 	);
 	const data = await imgRes.json();
 	const imgUrl = data[0].url;
