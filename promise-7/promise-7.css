@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	background-color: #f3f3f3;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container .image-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	background-color: #fff;
+	border: 1px solid #eee;
+	margin-top: 25px;
+	list-style: none;
+}
+
+.container .image-list .list-item {
+	padding: 15px;
+}
+
+.cat {
+	width: 100%;
+	height: 100%;
+}
+
+.dropdown-container {
+	margin-top: 20px;
+	display: flex;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promise Exercise 5</title>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .collection {
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .hidden {
+    display: none;
+  }
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    color: #fff;
+  }
+  .collection-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 5px;
+  }
+  .avatar {
+    border-radius: 50%;
+  }
+
+  .info {
+    border: 1px solid black;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <ul class="collection card"></ul>
+
+  
+
+  <script src="promise-4.js"></script>
+
+</body>
+</html>
